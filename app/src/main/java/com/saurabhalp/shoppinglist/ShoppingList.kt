@@ -37,8 +37,6 @@ import androidx.compose.ui.BiasAlignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
-import org.w3c.dom.Text
 
 data class ShoppingItem(
     val id :Int,
@@ -48,6 +46,7 @@ data class ShoppingItem(
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
+
 @Composable
 fun ShoppingList() {
     var sItem by remember { mutableStateOf(listOf<ShoppingItem>()) }
